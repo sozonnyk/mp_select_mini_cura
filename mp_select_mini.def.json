@@ -1,0 +1,56 @@
+{
+    "id": "mp_select_mini",
+    "version": 2,
+    "name": "Monoprice Select Mini",
+    "inherits": "fdmprinter",
+    "metadata": {
+        "visible": true,
+        "author": "",
+        "manufacturer": "Malyan",
+        "category": "Other",
+        "file_formats": "text/x-gcode",
+        "icon": "icon_ultimaker2"
+    },
+
+    "overrides": {
+        "machine_heated_bed": {
+            "default_value": true
+        },
+        "machine_width": {
+            "default_value": 125
+        },
+        "machine_height": {
+            "default_value": 120
+        },
+        "machine_depth": {
+            "default_value": 125
+        },
+        "machine_center_is_zero": {
+            "default_value": false
+        },
+        "machine_nozzle_size": {
+            "default_value": 0.4
+        },
+        "material_diameter": {
+            "default_value": 1.75
+        },
+        "machine_nozzle_heat_up_speed": {
+            "default_value": 2
+        },
+        "machine_nozzle_cool_down_speed": {
+            "default_value": 2
+        },
+        "gantry_height": {
+            "default_value": 55
+        },
+        "machine_gcode_flavor": {
+            "default_value": "RepRap (Marlin/Sprinter)"
+        },
+        "machine_start_gcode": {
+            "default_value": "G21 ;metric values\nG90 ;absolute positioning\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG28 X0 Y0 ;move X/Y to min endstops\nG28 Z0 ;move Z to min endstops\nG1 Z15.0 F3000 ;move the platform down 15mm\nG92 E0 ;zero the extruded length\nG1 F200 E3 ;extrude 3mm of feed stock\n;G92 E0 ;zero the extruded length again\n;G1 F3000\n"
+        },
+        "machine_end_gcode": {
+            "default_value": "M104 S0 ; turn off extruder\nM140 S0 ; turn off bed\nM106 S1 ; turn off fan\nG28 X ; home x axis\nG1 Y120 ; move platform forward for access\nM84 ; disable motor"
+        }
+    }
+}
