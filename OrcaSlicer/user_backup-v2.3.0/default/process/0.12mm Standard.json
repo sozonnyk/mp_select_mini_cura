@@ -1,0 +1,14 @@
+{
+    "brim_object_gap": "0",
+    "brim_type": "no_brim",
+    "filter_out_gap_fill": "1",
+    "from": "User",
+    "inherits": "0.12mm Fine @MyMarlin",
+    "is_custom_defined": "0",
+    "name": "0.12mm Standard",
+    "print_settings_id": "0.12mm Standard",
+    "seam_position": "back",
+    "version": "2.0.2.0",
+    "wipe_before_external_loop": "1",
+    "wipe_on_loops": "1"
+}

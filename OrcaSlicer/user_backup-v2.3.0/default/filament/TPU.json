@@ -1,0 +1,25 @@
+{
+    "enable_pressure_advance": [
+        "1"
+    ],
+    "filament_retraction_length": [
+        "4"
+    ],
+    "filament_settings_id": [
+        "TPU"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "45"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "45"
+    ],
+    "inherits": "My Generic TPU",
+    "is_custom_defined": "0",
+    "name": "TPU",
+    "pressure_advance": [
+        "0.065"
+    ],
+    "version": "1.6.1.0"
+}
